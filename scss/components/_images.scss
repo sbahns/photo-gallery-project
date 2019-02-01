@@ -1,0 +1,29 @@
+//Image:
+
+.img {
+	width: 100%;
+	height: auto;
+	display: block;
+ &--logo {
+	 @extend .img;
+	 max-width: 163px;
+	 margin: 0 auto;
+	 @include media-q(medium) {
+		 margin: 0;
+		 max-width: 175px;
+	 }
+ }
+ &--frame {
+	 @extend .img;
+	 border: 1px solid #cdcdcd;
+   padding: 12px;
+	 margin: 20px auto 33px;
+	 max-width: 410px;
+ }
+ &--avatar {
+	 @extend .img;
+	 max-width: 200px;
+	 margin: 5px auto;
+
+ }
+}

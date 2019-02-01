@@ -1,0 +1,25 @@
+//Forms:
+.form {
+	&__label {
+		&--hidden {
+			display: none;
+		}
+	}
+	&__input {
+		display: block;
+	    padding: 10px;
+	    width: 50%;
+	    font-size: 16px;
+	    font-weight: normal;
+	    margin: 15px auto 10px;
+		border-radius: 5px;
+	}
+
+}
+
+.form {
+	padding-bottom: 8px;
+	[class^="btn--"] {
+		display: none;
+	}
+}

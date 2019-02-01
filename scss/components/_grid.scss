@@ -1,0 +1,107 @@
+/*--------------------------------------------------
+:: Grid
+-------------------------------------------------- */
+.container {
+	padding-top: 45px;
+	@include flex-box;
+
+	// Make nested grid 100%
+  [class*="grid__col--"] > & {
+    width: 100%;
+  }
+	@include media-q(medium) {
+		width: 80%;
+	}
+	@include media-q(large) {
+		width: 70%;
+		max-width: $container-max-width;
+	}
+}
+
+.card {
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.grid__col {
+  @include media-q(medium) {
+    @include g-columns;
+  }
+}
+
+[class^="grid__col--"] {
+  @include media-q(small)  {
+    margin-top: em(12px);
+    margin-bottom: em(12px);
+  }
+  @include media-q(medium) {
+    @include doubly(percentage($grid-gutter / $context));
+    float: left;
+    min-height: 1px;
+	text-align: center;
+    &:last-of-type {
+      //float: right;
+    }
+		.card, .form {
+			text-align: left;
+		}
+  }
+}
+
+.grid__row {
+	&.photo-gallery > .gallery-thumbnail {
+		padding: em(10px);
+	}
+
+
+}
+
+.grid__col {
+	&--3 {
+		&.theme__colors {
+			@extend %rounded_col;
+			background-color: $lavender;
+		}
+	}
+	&--4 {
+		&.theme__colors {
+			@extend %rounded_col;
+			background-color: lighten($cyan, 10);
+		}
+	}
+	&--5 {
+		&.theme__colors {
+			@extend %rounded_col;
+			background-color: #88d9a0;
+		}
+	}
+	&--6 {
+		&.theme__colors {
+			@extend %rounded_col;
+			background-color: $blue;
+		}
+	}
+	&--7 {
+		&.theme__colors {
+			@extend %rounded_col;
+			background-color: $pink;
+		}
+		&.centered {
+			@extend .centered;
+		}
+	}
+	&--8 {
+		&.theme__colors {
+			@extend %rounded_col;
+			background-color: lighten($orange, 8);
+		}
+	}
+	&--12 {
+		&.theme__colors {
+			@extend %rounded_col;
+			background-color: lighten($sea-green, 5);
+		}
+	}
+}
