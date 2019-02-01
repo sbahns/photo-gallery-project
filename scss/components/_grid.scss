@@ -33,6 +33,7 @@
 
 [class^="grid__col--"] {
   @include media-q(small)  {
+	@include doubly(percentage($grid-gutter / $context));
     margin-top: em(12px);
     margin-bottom: em(12px);
   }
@@ -52,56 +53,10 @@
 
 .grid__row {
 	&.photo-gallery > .gallery-thumbnail {
+		text-align: center;
 		padding: em(10px);
-	}
-
-
-}
-
-.grid__col {
-	&--3 {
-		&.theme__colors {
-			@extend %rounded_col;
-			background-color: $lavender;
-		}
-	}
-	&--4 {
-		&.theme__colors {
-			@extend %rounded_col;
-			background-color: lighten($cyan, 10);
-		}
-	}
-	&--5 {
-		&.theme__colors {
-			@extend %rounded_col;
-			background-color: #88d9a0;
-		}
-	}
-	&--6 {
-		&.theme__colors {
-			@extend %rounded_col;
-			background-color: $blue;
-		}
-	}
-	&--7 {
-		&.theme__colors {
-			@extend %rounded_col;
-			background-color: $pink;
-		}
-		&.centered {
-			@extend .centered;
-		}
-	}
-	&--8 {
-		&.theme__colors {
-			@extend %rounded_col;
-			background-color: lighten($orange, 8);
-		}
-	}
-	&--12 {
-		&.theme__colors {
-			@extend %rounded_col;
-			background-color: lighten($sea-green, 5);
+		@include media-q(medium) {
+			padding: em(18px);
 		}
 	}
 }
