@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var arrayDivs = [
+    const arrayDivs = [
         {
 					image: '01.jpg',
 					thumbnail: '01.jpg',
@@ -77,7 +77,6 @@ $(document).ready(function() {
     function init() {
         for (var i = 0; i < arrayDivs.length; i++) {
             var html = '';
-
             html += '<div class="grid__col--3 gallery-thumbnail" data-src="images/photos/' + arrayDivs[i].image + '">';
 						html += '<img src="images/photos/thumbnails/' + arrayDivs[i].thumbnail + '"';
             html += 'title="' + arrayDivs[i].title + '"';
