@@ -1,6 +1,6 @@
 function search() {
   // Declare variables
-  var input, filter, row, thumbnail, img, i, txtValue;
+  let input, filter, row, thumbnail, img, i, txtValue;
   input = document.getElementById('gallery-search');
   filter = input.value.toUpperCase();
   row = document.getElementById("lightgallery");

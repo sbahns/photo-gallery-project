@@ -75,8 +75,8 @@ $(document).ready(function() {
     ];
 
     function init() {
-        for (var i = 0; i < arrayDivs.length; i++) {
-            var html = '';
+        for (let i = 0; i < arrayDivs.length; i++) {
+            let html = '';
             html += '<div class="grid__col--3 gallery-thumbnail" data-src="images/photos/' + arrayDivs[i].image + '">';
 						html += '<img src="images/photos/thumbnails/' + arrayDivs[i].thumbnail + '"';
             html += 'title="' + arrayDivs[i].title + '"';
