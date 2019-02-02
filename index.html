@@ -14,13 +14,13 @@
 	  <div class="grid__row">
 	    <div class="grid__col--12 search">
 			<form class="form">
-          		<input type="text" class="form__input" id="gallery-search" name="photo-search" onkeyup="search()" placeholder="Search(16pt)">
+          		<input type="text" class="form__input" id="gallery-search" name="photo-search" onkeyup="search()" placeholder="Search(16pt)" onfocus="this.placeholder=''" onblur="this.placeholder='Search(16pt)'">
 	  		</form>
 	    </div>
 	  </div>
 
 	  <div class="grid__row photo-gallery padding-lr padding-tb" id="lightgallery">
-    		
+
 	  </div>
 
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
