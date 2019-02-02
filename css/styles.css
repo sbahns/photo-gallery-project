@@ -473,7 +473,7 @@ ul {
   .grid__col--12 {
     width: 100%; } }
 
-@media (min-width: 1) and (max-width: 767px) {
+@media (min-width: 1px) and (max-width: 767px) {
   [class^="grid__col--"] {
     margin-top: 0.66667em;
     margin-bottom: 0.66667em; } }
@@ -592,7 +592,7 @@ img {
   margin-bottom: 1.57143em; }
   [class^="btn--"]:first-of-type {
     margin-top: 1.78571em; }
-  @media (min-width: 1) and (max-width: 767px) {
+  @media (min-width: 1px) and (max-width: 767px) {
     [class^="btn--"] {
       width: 100%; } }
   @media (min-width: 768px) {
